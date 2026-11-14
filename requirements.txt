@@ -1,0 +1,5 @@
+oracledb>=2.0
+pyserial>=3.5
+PyQt5>=5.15
+Flask>=3.0
+python-dotenv>=1.0
