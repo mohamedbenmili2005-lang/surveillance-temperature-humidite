@@ -4,6 +4,10 @@ Projet de stage de perfectionnement (MS-TECHSOFT, janvier 2026) : mesure de la t
 
 ## Architecture
 
+![Architecture du système](docs/images/architecture.png)
+
+Schéma technique :
+
 ```mermaid
 flowchart LR
     A[DHT22] --> B[STM32 NUCLEO<br/>MicroPython]
@@ -27,6 +31,16 @@ src/surveillance/
 .env.example                     Modèle de configuration
 requirements.txt                 Dépendances Python
 ```
+
+## Aperçu
+
+**Interface PyQt5** (seuil d'alerte et historique) :
+
+![Interface Qt](docs/images/interface-qt.png)
+
+**Interface web Flask** :
+
+![Interface web](docs/images/interface-web.png)
 
 ## Installation
 
@@ -53,6 +67,10 @@ python -m surveillance.web_app.app        # 2b. interface web -> http://127.0.0.
 ```
 
 ## Câblage DHT22
+
+![Montage réel](docs/images/montage-reel.png)
+
+![Brochage DHT22](docs/images/dht22-brochage.jpg)
 
 | DHT22      | STM32 NUCLEO          |
 |------------|-----------------------|
